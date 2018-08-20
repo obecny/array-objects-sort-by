@@ -1,0 +1,19 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": [
+      "jsdoc"
+    ]
+  },
+  "plugins": [],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "name": "Array Sort",
+    "footerText": "Array Sort",
+    "default": {
+      "outputSourceFiles": false,
+      "useLongnameInNav": true
+    }
+  }
+}

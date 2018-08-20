@@ -1,0 +1,27 @@
+{
+  "name": "array-objects-sort-by",
+  "version": "1.0.0",
+  "description": "Soring array of objects using advanced options",
+  "keywords": [
+    "array",
+    "sort",
+    "objects"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run lint && npm run test && npm run jsdoc",
+    "lint": "./node_modules/.bin/eslint index.js",
+    "jsdoc": "./node_modules/.bin/jsdoc index.js -r --readme README.md --configure jsdoc.conf.json -d jsdoc",
+    "test": "(npm run jasmine_test || true) && npm run jasmine_report",
+    "jasmine_test": "./node_modules/jasmine-node/bin/jasmine-node tests/ --junitreport --output tmp/units",
+    "jasmine_report": "./node_modules/junit-viewer/bin/junit-viewer --results=tmp/units --save=tmp/units_result.html"
+  },
+  "author": "Bartlomiej Obecny",
+  "license": "Mit",
+  "devDependencies": {
+    "eslint": "5.4.0",
+    "jasmine-node": "1.15.0",
+    "jsdoc": "3.5.5",
+    "junit-viewer": "4.11.1"
+  }
+}
